@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    margin: 20px 0;
+    border-block: 5px solid #063082;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 50px;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav li {
+    padding: 20px 60px;
+}
+nav a {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    text-wrap: nowrap;
+    letter-spacing: 0.1em;
+}
+nav a:hover {
+    color: #fdf720;
+    border-bottom: 2px solid;
+}
+#navPhone {
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#hero {
+    box-shadow: 4px 4px 8px;
+    width: 100%;
+}
+#heroText {
+    padding: 15px;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    border-left: 5px solid;
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.1em;
+}
+main p {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    border-block: #063082 solid;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+main img {
+    margin: auto;
+    height: 400px;
+    display: block;
+    box-shadow: 3px 3px 6px;
+}
+fieldset {
+    margin: 80px;
+    padding: 35px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+fieldset legend {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+form label {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+form input, #resumeBtn, #commentIn{
+    margin: 8px 0 25px;
+    padding: 10px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    display: block;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+#resumeBtn {
+    border-radius: 8px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#commentIn {
+    height: 100px;
+    resize: none;
+}
+#submit {
+    border-radius: 8px;
+    height: auto;
+    width: 100px;
+    color: #fff;
+    background-color: #063082;
+}
