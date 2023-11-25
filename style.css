@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+}
 #wrapper {
     width: 80%;
     margin-left: auto;
@@ -46,7 +49,7 @@ nav a:hover {
     cursor: pointer;
 }
 #hero {
-    box-shadow: 4px 4px 8px;
+    box-shadow: 4px 5px 8px;
     width: 100%;
 }
 #heroText {
@@ -60,21 +63,61 @@ nav a:hover {
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.1em;
 }
-main p {
-    margin: 40px auto;
-    padding: 20px;
-    width: 80%;
-    border-block: #063082 solid;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5em;
-    text-align: center;
+hr {
+    margin: 20px 0;
 }
-main img {
-    margin: auto;
-    height: 400px;
+#emeRelationship {
+    margin: 40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+#emeRelationship h1 {
+    margin: 0;
+    color: #fdf720;
+    font-size: 35px;
+}
+#emeRelationship p {
+    margin: 15px 8px;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textContainer {
+    margin: 40px 2vw;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+.contentTitle {
+    padding: 15px;
+    color: #fdf720;
+    font-size: 32px;
+}
+.text {
+    padding: 20px;
+    border-block: #063082 solid;
+    margin: 8px 4px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+.contentContainer img {
+    margin: 1vw 2vw;
+    width: 35vw;
     display: block;
     box-shadow: 3px 3px 6px;
+}
+#serviceLists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#serviceLists ul li {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 fieldset {
     margin: 80px;
@@ -103,21 +146,70 @@ form input, #resumeBtn, #commentIn{
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
+.asterisk {
+    color: red;
+}
 #resumeBtn {
-    border-radius: 8px;
+    border-radius: 15px;
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+#resumeBtn:hover {
+    box-shadow: 0 0 5px black;
 }
 #commentIn {
     height: 100px;
     resize: none;
 }
 #submit {
-    border-radius: 8px;
+    border-radius: 15px;
     height: auto;
     width: 100px;
     color: #fff;
     background-color: #063082;
+    cursor: pointer;
+}
+#submit:hover {
+    box-shadow: 0 0 5px black;
+}
+footer {
+    margin-top: 55px;
+    border-top: 2px solid black;
+    width: 100%;
+    position: absolute;
+    background-color: #063082;
+}
+footer ul {
+    margin: 45px 0 0;
+    padding: 0;
+    text-align: center;
+    line-height: 6vh;
+}
+footer ul img {
+    height: 25px;
+}
+footer ul li {
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    letter-spacing: 0.1em;
+}
+#top {
+    margin: 25px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    background-color: #063082;
+    color: white;
+}
+#top:hover {
+    box-shadow: 0 0 8px #fdf720;
+    cursor: pointer;
 }
