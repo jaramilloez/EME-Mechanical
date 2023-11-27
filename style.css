@@ -64,12 +64,12 @@ nav a:hover {
 }
 .contentTitle {
     padding: 15px;
-    color: #fdf720;
-    font-size: 32px;
+    color: #063082;
+    font-size: 25px;
 }
 .text {
     padding: 20px;
-    border-block: #063082 solid;
+    border-block: #fdf720 solid;
     margin: 8px 4px;
     font-size: 16px;
     line-height: 1.8em;
@@ -143,17 +143,17 @@ footer ul li {
 hr {
     margin: 20px 0;
 }
-#emeRelationship {
+#headerTitle {
     margin: 40px 0;
     font-family: 'Roboto', sans-serif;
 }
-#emeRelationship h1 {
-    margin: 0;
-    color: #fdf720;
+#headerTitle h1 {
+    margin: 15px 0;
+    color: #063082;
     font-size: 35px;
 }
-#emeRelationship p {
-    margin: 15px 8px;
+#headerTitle p {
+    margin: 0 8px;
     font-size: 20px;
     line-height: 1.8em;
 }
@@ -163,6 +163,7 @@ hr {
 
 #servicesHeader {
     margin: 0 10px;
+    color: #063082;
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
 }
