@@ -51,13 +51,30 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
 }
+#headerTitle {
+    margin: 35px 0;
+    font-family: 'Roboto', sans-serif;
+}
+#headerTitle h1 {
+    margin: 15px 0;
+    padding: 5px 5px;
+    border-bottom: 5px double #fdf720;
+    width: fit-content;
+    color: #063082;
+    font-size: 35px;
+}
+#headerTitle p {
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 1.8em;
+}
 .contentContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .textContainer {
-    margin: 40px 2vw;
+    margin: 0 2vw;
     height: auto;
     font-family: 'Roboto', sans-serif;
     text-align: left;
@@ -143,20 +160,6 @@ footer ul li {
 hr {
     margin: 20px 0;
 }
-#headerTitle {
-    margin: 40px 0;
-    font-family: 'Roboto', sans-serif;
-}
-#headerTitle h1 {
-    margin: 15px 0;
-    color: #063082;
-    font-size: 35px;
-}
-#headerTitle p {
-    margin: 0 8px;
-    font-size: 20px;
-    line-height: 1.8em;
-}
 
 
 /* || Services */
@@ -168,12 +171,16 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 .textContainer ul {
-    list-style: square;
+    list-style: square inside;
 }
 
 
 /* || Join Us */
 
+
+#joinUsImg {
+    width: 50vw;
+}
 fieldset {
     margin: 80px;
     padding: 35px;
@@ -200,6 +207,9 @@ form input, #resumeBtn, #commentIn{
     display: block;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+}
+form input:hover, #commentIn:hover {
+    background-color: #f5f5f5;
 }
 .asterisk {
     color: red;
