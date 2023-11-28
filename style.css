@@ -65,6 +65,7 @@ nav a:hover {
 }
 #headerTitle p {
     margin: 0 10px;
+    display: flex;
     font-size: 20px;
     line-height: 1.8em;
 }
@@ -111,7 +112,7 @@ footer ul {
     line-height: 6vh;
 }
 footer ul img {
-    height: 25px;
+    height: 60px;
 }
 footer ul li {
     color: #fdf720;
@@ -180,6 +181,11 @@ hr {
 
 #joinUsImg {
     width: 50vw;
+    box-shadow: 3px 3px 6px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
 }
 fieldset {
     margin: 80px;
