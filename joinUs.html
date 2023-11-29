@@ -21,7 +21,7 @@
                     <li><a href="joinUs.html">JOIN US</a></li>
                     <li id="navPhone">
                         <i class="fas fa-phone"></i>
-                        <div id="navNumber">(801) 746-2828</div>
+                        <div id="navNum">(801) 746-2828</div>
                     </li>
                 </ul>
             </nav>
@@ -39,24 +39,24 @@
                 </p>
             </div>    
             <img src="images/employeeListening.jpg" alt="Employees gathering their attention off camera" id="joinUsImg">
-            <form>
+            <form id="inquiryForm">
                 <fieldset>
                     <legend>Join The Team</legend>
                     <label for="nameIn">Name: <span class="asterisk">*</span></label>
-                    <input type="text" placeholder="John Doe" id="nameIn" required>
+                    <input type="text" placeholder="John Doe" id="nameIn" class="formInput" required>
     
                     <label for="emailIn">Email: <span class="asterisk">*</span></label>
-                    <input type="email" placeholder="johndoe@email.com" id="emailIn" required>
+                    <input type="email" placeholder="johndoe@email.com" id="emailIn" class="formInput" required>
     
                     <label for="phoneIn">Phone Number: <span class="asterisk">*</span></label>
-                    <input type="tel" placeholder="XXX-XXX-XXXX" id="phoneIn" required>
+                    <input type="tel" placeholder="XXX-XXX-XXXX" id="phoneIn" class="formInput" required>
     
-                    <button id="resumeBtn">Upload a Resume</button>
+                    <div id=resume><button id="resumeBtn" class="formInput">Upload a Resume</button></div>
     
                     <label for="commentIn">Comments:</label>
-                    <textarea id="commentIn"></textarea>
+                    <textarea id="commentIn"class="formInput" ></textarea>
     
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" class="formInput">
                 </fieldset>
             </form>
         </main>
@@ -68,7 +68,7 @@
             <li>(801) 746-2828</li>
             <li>Please reach out, we'd love to hear from you.</li>
         </ul>
-        <button id="top">Back To Top ▲</button>
+        <button id="toTop">Back To Top ▲</button>
     </footer>
     <script src="js/eventHandlers.js"></script>
     <script src="js/form.js"></script>
