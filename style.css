@@ -29,27 +29,32 @@ nav ul {
     list-style: none;
 }
 nav li {
-    padding: 20px 60px;
+    padding: 20px 80px;
 }
 nav a {
     padding-top: inherit;
     padding-bottom: inherit;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
     text-decoration: none;
     text-wrap: nowrap;
     letter-spacing: 0.1em;
 }
 nav a:hover {
-    color: #fdf720;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid #fdf720;
+    text-shadow: 2px 2px 2px #fdf720;
 }
 #navPhone {
     padding-right: 10px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+#navNumber {
+    position: absolute;
+    top: 5%;
+    left: 85%;
 }
 #headerTitle {
     margin: 35px 0;
@@ -66,7 +71,7 @@ nav a:hover {
 #headerTitle p {
     margin: 0 10px;
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8em;
 }
 .contentContainer {
@@ -89,7 +94,7 @@ nav a:hover {
     padding: 20px;
     border-block: #fdf720 solid;
     margin: 8px 4px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8em;
 }
 .contentContainer img {
@@ -115,7 +120,7 @@ footer ul img {
     height: 60px;
 }
 footer ul li {
-    color: #fdf720;
+    color: #fff;
     font-family: 'Anton', sans-serif;
     font-size: 15px;
     list-style: none;
@@ -143,6 +148,9 @@ footer ul li {
 
 /* || Index */
 
+#heroContainer {
+    position: relative;
+}
 #hero {
     box-shadow: 4px 5px 8px;
     width: 100%;
@@ -150,8 +158,8 @@ footer ul li {
 #heroText {
     padding: 15px;
     position: absolute;
-    top: 35%;
-    left: 60%;
+    top: 10%;
+    left: 65%;
     border-left: 5px solid;
     color: #fff;
     font-size: 2.5vw;
