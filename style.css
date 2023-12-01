@@ -11,15 +11,33 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+#navNum {
+    margin: 10px 0;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 15px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+    background-color: white;
+}
+#navNum:hover, #navNum:active {
+    box-shadow: 0 0 5px #fdf720;
+}
 header{
-    margin: 20px 0;
+    margin-bottom: 20px;
     border-block: 5px solid #063082;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 header img {
+    margin: 10px 0;
     height: 50px;
+}
+nav {
+    margin-left: auto;
 }
 nav ul {
     margin: 0;
@@ -30,13 +48,13 @@ nav ul {
     position: relative;
 }
 nav li {
-    padding: 20px 60px;
+    padding: 15px 70px;
 }
 nav a {
     padding-top: inherit;
     padding-bottom: inherit;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Anton', sans-serif;
     text-decoration: none;
     text-wrap: nowrap;
@@ -45,37 +63,6 @@ nav a {
 nav a:hover, nav a:active {
     border-bottom: 3px solid #fdf720;
     text-shadow: 2px 2px 2px #fdf720;
-}
-#navPhone {
-    padding-right: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-#navNum {
-    padding: 5px;
-    border: 2px solid #063082;
-    border-radius: 10px;
-    background-color: #fff;
-    white-space: nowrap;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 0.1em;
-    transform: scale(0);
-    position: absolute;
-    top: 30%;
-    left: 90%;
-    transition: 
-        top ease-out 150ms,
-        transform ease-out 150ms
-    ;
-}
-#navNum.active {
-    top: 80%;
-    transform: scale(1);
-}
-#navNum:hover {
-    box-shadow: 0 0 8px #fdf720;
-    background-color: #f5f5f5;
 }
 #hamburger {
     display: none;
@@ -169,7 +156,10 @@ footer ul li {
     box-shadow: 0 0 8px #fdf720;
     cursor: pointer;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+    #wrapper {
+        width: 90%;
+    }
     .contentContainer {
         display: block;
     }
@@ -184,10 +174,10 @@ footer ul li {
         display: none;
     }
     #hamburger {
-        padding-right: 10px;
+        padding-right: 12px;
         display: block;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 25px;
     }
     #hamburgerMenu {
         padding: 5px;
@@ -200,18 +190,24 @@ footer ul li {
         letter-spacing: 0.1em;
         transform: scale(0);
         position: absolute;
-        top: 150%;
-        left: -600%;
+        top: -250%;
+        left: -150%;
+        transition: 
+            transform ease-out 100ms,
+            top ease-out 100ms,
+            left ease-out 100ms
+        ;
     }
     #hamburgerMenu.active {
         transform: scale(1);
+        top: 150%;
+        left: -300%;
     }
     #hamburgerMenu li {
         padding: 10px;
     }
-    #navNum {
-        position: static;
-        transform: scale(1);
+    #hamburgerMenu a {
+        padding-left: inherit;
     }
     #hamburgerMenu hr {
         margin: 3px;
